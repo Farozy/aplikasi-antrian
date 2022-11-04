@@ -1,0 +1,36 @@
+CRITICAL - 2022-11-01 22:05:25 --> Undefined property: App\Controllers\Counter::$requst
+in APPPATH\Controllers\Counter.php on line 58.
+ 1 APPPATH\Controllers\Counter.php(58): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Counter::$requst', 'APPPATH\\Controllers\\Counter.php', 58, [])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Counter->saveCounter()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Counter))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-01 22:07:49 --> Return value of CodeIgniter\BaseModel::transformDataToArray() must be of the type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1623.
+ 1 SYSTEMPATH\BaseModel.php(708): CodeIgniter\BaseModel->transformDataToArray('a', 'insert')
+ 2 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert('a', true)
+ 3 APPPATH\Controllers\Counter.php(62): CodeIgniter\Model->insert('a')
+ 4 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Counter->saveCounter()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Counter))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-01 22:08:36 --> Return value of CodeIgniter\BaseModel::transformDataToArray() must be of the type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1623.
+ 1 SYSTEMPATH\BaseModel.php(708): CodeIgniter\BaseModel->transformDataToArray('a', 'insert')
+ 2 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert('a', true)
+ 3 APPPATH\Controllers\Counter.php(62): CodeIgniter\Model->insert('a')
+ 4 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Counter->saveCounter()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Counter))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-01 22:09:24 --> Undefined property: stdClass::$id_id_counter
+in APPPATH\Controllers\Counter.php on line 36.
+ 1 APPPATH\Controllers\Counter.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$id_id_counter', 'APPPATH\\Controllers\\Counter.php', 36, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Counter->listData()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Counter))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

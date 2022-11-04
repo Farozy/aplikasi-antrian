@@ -1,0 +1,118 @@
+ERROR - 2022-10-31 20:13:07 --> mysqli_sql_exception: Unknown column 'id_anggota' in 'order clause' in D:\File\Xampp\htdocs\testing\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\File\Xampp\htdocs\testing\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\File\Xampp\htdocs\testing\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\File\Xampp\htdocs\testing\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\File\Xampp\htdocs\testing\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\File\Xampp\htdocs\testing\app\Models\NoAntrianDataModel.php(71): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\File\Xampp\htdocs\testing\app\Controllers\NoAntrian.php(28): App\Models\NoAntrianDataModel->get_datatables()
+#6 D:\File\Xampp\htdocs\testing\system\CodeIgniter.php(902): App\Controllers\NoAntrian->listData()
+#7 D:\File\Xampp\htdocs\testing\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoAntrian))
+#8 D:\File\Xampp\htdocs\testing\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\File\Xampp\htdocs\testing\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\File\Xampp\htdocs\testing\system\Commands\Server\rewrite.php(46): require_once('D:\\File\\Xampp\\h...')
+#11 {main}
+CRITICAL - 2022-10-31 20:13:07 --> Unknown column 'id_anggota' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `no_antrian`
+ORDER BY `id_anggota` ASC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `no_antrian`
+ORDER BY `id_anggota` ASC
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `no_antrian`
+ORDER BY `id_anggota` ASC
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `no_antrian`
+ORDER BY `id_anggota` ASC
+ LIMIT 10', [], false)
+ 5 APPPATH\Models\NoAntrianDataModel.php(71): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\NoAntrian.php(28): App\Models\NoAntrianDataModel->get_datatables()
+ 7 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\NoAntrian->listData()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoAntrian))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-10-31 20:13:17 --> mysqli_sql_exception: Unknown column 'id_anggota' in 'order clause' in D:\File\Xampp\htdocs\testing\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\File\Xampp\htdocs\testing\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\File\Xampp\htdocs\testing\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\File\Xampp\htdocs\testing\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\File\Xampp\htdocs\testing\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\File\Xampp\htdocs\testing\app\Models\NoAntrianDataModel.php(71): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\File\Xampp\htdocs\testing\app\Controllers\NoAntrian.php(28): App\Models\NoAntrianDataModel->get_datatables()
+#6 D:\File\Xampp\htdocs\testing\system\CodeIgniter.php(902): App\Controllers\NoAntrian->listData()
+#7 D:\File\Xampp\htdocs\testing\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoAntrian))
+#8 D:\File\Xampp\htdocs\testing\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\File\Xampp\htdocs\testing\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\File\Xampp\htdocs\testing\system\Commands\Server\rewrite.php(46): require_once('D:\\File\\Xampp\\h...')
+#11 {main}
+CRITICAL - 2022-10-31 20:13:17 --> Unknown column 'id_anggota' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `no_antrian`
+ORDER BY `id_anggota` ASC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `no_antrian`
+ORDER BY `id_anggota` ASC
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `no_antrian`
+ORDER BY `id_anggota` ASC
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `no_antrian`
+ORDER BY `id_anggota` ASC
+ LIMIT 10', [], false)
+ 5 APPPATH\Models\NoAntrianDataModel.php(71): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\NoAntrian.php(28): App\Models\NoAntrianDataModel->get_datatables()
+ 7 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\NoAntrian->listData()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoAntrian))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-31 21:25:10 --> Undefined property: App\Controllers\NoAntrian::$barang
+in APPPATH\Controllers\NoAntrian.php on line 62.
+ 1 APPPATH\Controllers\NoAntrian.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\NoAntrian::$barang', 'APPPATH\\Controllers\\NoAntrian.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\NoAntrian->ambilAntrian()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoAntrian))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-31 21:29:10 --> str_pad() expects parameter 1 to be string, array given
+in APPPATH\Controllers\NoAntrian.php on line 63.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'str_pad() expects parameter 1 to be string, array given', 'APPPATH\\Controllers\\NoAntrian.php', 63, [...])
+ 2 APPPATH\Controllers\NoAntrian.php(63): str_pad([...], 1, '0', 0)
+ 3 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\NoAntrian->ambilAntrian()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoAntrian))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-31 21:31:22 --> substr() expects at least 2 parameters, 1 given
+in APPPATH\Controllers\NoAntrian.php on line 61.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'substr() expects at least 2 parameters, 1 given', 'APPPATH\\Controllers\\NoAntrian.php', 61, [...])
+ 2 APPPATH\Controllers\NoAntrian.php(61): substr('ROOTPATH\\public')
+ 3 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\NoAntrian->ambilAntrian()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoAntrian))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-31 21:37:16 --> Invalid file: antrian/data.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('antrian/data.php')
+ 2 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('antrian/data', null, true)
+ 3 APPPATH\Views\noAntrian\view.php(6): CodeIgniter\View\View->include('antrian/data')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\noAntrian\\view.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('noAntrian/view', [], true)
+ 7 APPPATH\Controllers\NoAntrian.php(20): view('noAntrian/view', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\NoAntrian->index()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoAntrian))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

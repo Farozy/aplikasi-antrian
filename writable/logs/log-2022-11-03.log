@@ -1,0 +1,199 @@
+ERROR - 2022-11-03 01:31:10 --> Email: sendWithMail throwed ErrorException: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\File\Xampp\htdocs\testing\system\Email\Email.php:1725
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mail(): Failed ...', 'D:\\File\\Xampp\\h...', 1725, Array)
+#1 D:\File\Xampp\htdocs\testing\system\Email\Email.php(1725): mail('admin@gmail.com', '=?UTF-8?Q?Activ...', 'This is a multi...', 'Date: Thu, 3 No...')
+#2 D:\File\Xampp\htdocs\testing\system\Email\Email.php(1662): CodeIgniter\Email\Email->sendWithMail()
+#3 D:\File\Xampp\htdocs\testing\system\Email\Email.php(1560): CodeIgniter\Email\Email->spoolEmail()
+#4 D:\File\Xampp\htdocs\testing\vendor\myth\auth\src\Authentication\Activators\EmailActivator.php(32): CodeIgniter\Email\Email->send()
+#5 D:\File\Xampp\htdocs\testing\vendor\myth\auth\src\Controllers\AuthController.php(185): Myth\Auth\Authentication\Activators\EmailActivator->send(Object(Myth\Auth\Entities\User))
+#6 D:\File\Xampp\htdocs\testing\system\CodeIgniter.php(902): Myth\Auth\Controllers\AuthController->attemptRegister()
+#7 D:\File\Xampp\htdocs\testing\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#8 D:\File\Xampp\htdocs\testing\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\File\Xampp\htdocs\testing\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\File\Xampp\htdocs\testing\system\Commands\Server\rewrite.php(46): require_once('D:\\File\\Xampp\\h...')
+#11 {main}
+ERROR - 2022-11-03 01:31:10 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2022-11-03 01:31:10 --> 
+ERROR - 2022-11-03 01:33:52 --> Email: sendWithMail throwed ErrorException: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\File\Xampp\htdocs\testing\system\Email\Email.php:1725
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mail(): Failed ...', 'D:\\File\\Xampp\\h...', 1725, Array)
+#1 D:\File\Xampp\htdocs\testing\system\Email\Email.php(1725): mail('admin@gmail.com', '=?UTF-8?Q?Activ...', 'This is a multi...', 'Date: Thu, 3 No...')
+#2 D:\File\Xampp\htdocs\testing\system\Email\Email.php(1662): CodeIgniter\Email\Email->sendWithMail()
+#3 D:\File\Xampp\htdocs\testing\system\Email\Email.php(1560): CodeIgniter\Email\Email->spoolEmail()
+#4 D:\File\Xampp\htdocs\testing\vendor\myth\auth\src\Authentication\Activators\EmailActivator.php(32): CodeIgniter\Email\Email->send()
+#5 D:\File\Xampp\htdocs\testing\vendor\myth\auth\src\Controllers\AuthController.php(172): Myth\Auth\Authentication\Activators\EmailActivator->send(Object(Myth\Auth\Entities\User))
+#6 D:\File\Xampp\htdocs\testing\system\CodeIgniter.php(902): Myth\Auth\Controllers\AuthController->attemptRegister()
+#7 D:\File\Xampp\htdocs\testing\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#8 D:\File\Xampp\htdocs\testing\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\File\Xampp\htdocs\testing\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\File\Xampp\htdocs\testing\system\Commands\Server\rewrite.php(46): require_once('D:\\File\\Xampp\\h...')
+#11 {main}
+ERROR - 2022-11-03 01:33:52 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2022-11-03 01:33:52 --> 
+CRITICAL - 2022-11-03 01:33:52 --> Argument 1 passed to Myth\Auth\Models\UserModel::withGroup() must be of the type string, null given, called in D:\File\Xampp\htdocs\testing\vendor\myth\auth\src\Controllers\AuthController.php on line 175
+in VENDORPATH\myth\auth\src\Models\UserModel.php on line 73.
+ 1 VENDORPATH\myth\auth\src\Controllers\AuthController.php(175): Myth\Auth\Models\UserModel->withGroup(null)
+ 2 SYSTEMPATH\CodeIgniter.php(902): Myth\Auth\Controllers\AuthController->attemptRegister()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-03 01:34:42 --> Argument 1 passed to Myth\Auth\Models\UserModel::withGroup() must be of the type string, null given, called in D:\File\Xampp\htdocs\testing\vendor\myth\auth\src\Controllers\AuthController.php on line 175
+in VENDORPATH\myth\auth\src\Models\UserModel.php on line 73.
+ 1 VENDORPATH\myth\auth\src\Controllers\AuthController.php(175): Myth\Auth\Models\UserModel->withGroup(null)
+ 2 SYSTEMPATH\CodeIgniter.php(902): Myth\Auth\Controllers\AuthController->attemptRegister()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-03 01:34:48 --> Argument 1 passed to Myth\Auth\Models\UserModel::withGroup() must be of the type string, null given, called in D:\File\Xampp\htdocs\testing\vendor\myth\auth\src\Controllers\AuthController.php on line 175
+in VENDORPATH\myth\auth\src\Models\UserModel.php on line 73.
+ 1 VENDORPATH\myth\auth\src\Controllers\AuthController.php(175): Myth\Auth\Models\UserModel->withGroup(null)
+ 2 SYSTEMPATH\CodeIgniter.php(902): Myth\Auth\Controllers\AuthController->attemptRegister()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-03 01:35:00 --> Undefined variable: user
+in VENDORPATH\myth\auth\src\Controllers\AuthController.php on line 171.
+ 1 VENDORPATH\myth\auth\src\Controllers\AuthController.php(171): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: user', 'VENDORPATH\\myth\\auth\\src\\Controllers\\AuthController.php', 171, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): Myth\Auth\Controllers\AuthController->attemptRegister()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-03 01:35:23 --> Email: sendWithMail throwed ErrorException: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\File\Xampp\htdocs\testing\system\Email\Email.php:1725
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mail(): Failed ...', 'D:\\File\\Xampp\\h...', 1725, Array)
+#1 D:\File\Xampp\htdocs\testing\system\Email\Email.php(1725): mail('admin@gmail.com', '=?UTF-8?Q?Activ...', 'This is a multi...', 'Date: Thu, 3 No...')
+#2 D:\File\Xampp\htdocs\testing\system\Email\Email.php(1662): CodeIgniter\Email\Email->sendWithMail()
+#3 D:\File\Xampp\htdocs\testing\system\Email\Email.php(1560): CodeIgniter\Email\Email->spoolEmail()
+#4 D:\File\Xampp\htdocs\testing\vendor\myth\auth\src\Authentication\Activators\EmailActivator.php(32): CodeIgniter\Email\Email->send()
+#5 D:\File\Xampp\htdocs\testing\vendor\myth\auth\src\Controllers\AuthController.php(185): Myth\Auth\Authentication\Activators\EmailActivator->send(Object(Myth\Auth\Entities\User))
+#6 D:\File\Xampp\htdocs\testing\system\CodeIgniter.php(902): Myth\Auth\Controllers\AuthController->attemptRegister()
+#7 D:\File\Xampp\htdocs\testing\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#8 D:\File\Xampp\htdocs\testing\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\File\Xampp\htdocs\testing\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\File\Xampp\htdocs\testing\system\Commands\Server\rewrite.php(46): require_once('D:\\File\\Xampp\\h...')
+#11 {main}
+ERROR - 2022-11-03 01:35:23 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2022-11-03 01:35:23 --> 
+CRITICAL - 2022-11-03 01:36:08 --> You do not have sufficient permissions to access that page.
+in VENDORPATH\myth\auth\src\Filters\RoleFilter.php on line 45.
+ 1 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('D:\\', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-03 01:36:18 --> You do not have sufficient permissions to access that page.
+in VENDORPATH\myth\auth\src\Filters\RoleFilter.php on line 45.
+ 1 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('D:\\', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-03 01:36:25 --> You do not have sufficient permissions to access that page.
+in VENDORPATH\myth\auth\src\Filters\RoleFilter.php on line 45.
+ 1 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('D:\\', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-03 01:36:57 --> You do not have sufficient permissions to access that page.
+in VENDORPATH\myth\auth\src\Filters\RoleFilter.php on line 45.
+ 1 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('D:\\', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-03 01:37:06 --> You do not have sufficient permissions to access that page.
+in VENDORPATH\myth\auth\src\Filters\RoleFilter.php on line 45.
+ 1 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('D:\\', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-03 01:37:38 --> You do not have sufficient permissions to access that page.
+in VENDORPATH\myth\auth\src\Filters\RoleFilter.php on line 45.
+ 1 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('D:\\', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-03 01:38:50 --> You do not have sufficient permissions to access that page.
+in VENDORPATH\myth\auth\src\Filters\RoleFilter.php on line 45.
+ 1 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('D:\\', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-03 01:38:52 --> You do not have sufficient permissions to access that page.
+in VENDORPATH\myth\auth\src\Filters\RoleFilter.php on line 45.
+ 1 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('D:\\', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-03 01:40:43 --> You do not have sufficient permissions to access that page.
+in VENDORPATH\myth\auth\src\Filters\RoleFilter.php on line 45.
+ 1 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('D:\\', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-11-03 01:52:18 --> Email: sendWithMail throwed ErrorException: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\File\Xampp\htdocs\testing\system\Email\Email.php:1725
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mail(): Failed ...', 'D:\\File\\Xampp\\h...', 1725, Array)
+#1 D:\File\Xampp\htdocs\testing\system\Email\Email.php(1725): mail('web@gmail.com', '=?UTF-8?Q?Activ...', 'This is a multi...', 'Date: Thu, 3 No...')
+#2 D:\File\Xampp\htdocs\testing\system\Email\Email.php(1662): CodeIgniter\Email\Email->sendWithMail()
+#3 D:\File\Xampp\htdocs\testing\system\Email\Email.php(1560): CodeIgniter\Email\Email->spoolEmail()
+#4 D:\File\Xampp\htdocs\testing\vendor\myth\auth\src\Authentication\Activators\EmailActivator.php(32): CodeIgniter\Email\Email->send()
+#5 D:\File\Xampp\htdocs\testing\vendor\myth\auth\src\Controllers\AuthController.php(185): Myth\Auth\Authentication\Activators\EmailActivator->send(Object(Myth\Auth\Entities\User))
+#6 D:\File\Xampp\htdocs\testing\system\CodeIgniter.php(902): Myth\Auth\Controllers\AuthController->attemptRegister()
+#7 D:\File\Xampp\htdocs\testing\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#8 D:\File\Xampp\htdocs\testing\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\File\Xampp\htdocs\testing\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\File\Xampp\htdocs\testing\system\Commands\Server\rewrite.php(46): require_once('D:\\File\\Xampp\\h...')
+#11 {main}
+ERROR - 2022-11-03 01:52:18 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2022-11-03 01:52:18 --> 
+CRITICAL - 2022-11-03 04:31:07 --> Class 'Myth\Auth\Filters\RoleFilter' not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('D:\\', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-03 04:33:20 --> Call to undefined function Myth\Auth\Controllers\in_groups()
+in VENDORPATH\myth\auth\src\Controllers\AuthController.php on line 98.
+ 1 SYSTEMPATH\CodeIgniter.php(902): Myth\Auth\Controllers\AuthController->attemptLogin()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-03 04:49:45 --> Class 'Myth\Auth\Filters\RoleFilter' not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('D:\\', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-03 04:52:57 --> Call to undefined function Myth\Auth\Controllers\in_groups()
+in VENDORPATH\myth\auth\src\Controllers\AuthController.php on line 98.
+ 1 SYSTEMPATH\CodeIgniter.php(902): Myth\Auth\Controllers\AuthController->attemptLogin()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-11-03 06:14:06 --> Undefined property: Myth\Auth\Config\Auth::$reservedRoutes
+in VENDORPATH\myth\auth\src\Config\Routes.php on line 14.
+ 1 VENDORPATH\myth\auth\src\Config\Routes.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: Myth\\Auth\\Config\\Auth::$reservedRoutes', 'VENDORPATH\\myth\\auth\\src\\Config\\Routes.php', 14, [...])
+ 2 SYSTEMPATH\Router\RouteCollection.php(637): CodeIgniter\Router\RouteCollection::Myth\Auth\Config\{closure}(Object(CodeIgniter\Router\RouteCollection))
+ 3 VENDORPATH\myth\auth\src\Config\Routes.php(34): CodeIgniter\Router\RouteCollection->group('ROOTPATH\\public', [...], Object(Closure))
+ 4 SYSTEMPATH\Router\RouteCollection.php(388): include('VENDORPATH\\myth\\auth\\src\\Config\\Routes.php')
+ 5 SYSTEMPATH\Router\RouteCollection.php(460): CodeIgniter\Router\RouteCollection->discoverRoutes()
+ 6 SYSTEMPATH\Router\Router.php(393): CodeIgniter\Router\RouteCollection->getRoutes('cli')
+ 7 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('ciserve')
+ 8 SYSTEMPATH\CodeIgniter.php(777): CodeIgniter\Router\Router->handle('ciserve')
+ 9 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+12 ROOTPATH\spark(98): CodeIgniter\CLI\Console->run()

@@ -1,0 +1,176 @@
+ERROR - 2022-10-30 19:37:35 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\File\Xampp\htdocs\testing\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\File\Xampp\htdocs\testing\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 D:\File\Xampp\htdocs\testing\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\File\Xampp\htdocs\testing\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\File\Xampp\htdocs\testing\system\Database\BaseConnection.php(1387): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 D:\File\Xampp\htdocs\testing\system\Database\BaseConnection.php(1421): CodeIgniter\Database\BaseConnection->listTables()
+#5 D:\File\Xampp\htdocs\testing\system\Database\MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 D:\File\Xampp\htdocs\testing\system\Database\MigrationRunner.php(167): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 D:\File\Xampp\htdocs\testing\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 D:\File\Xampp\htdocs\testing\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 D:\File\Xampp\htdocs\testing\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 D:\File\Xampp\htdocs\testing\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#11 D:\File\Xampp\htdocs\testing\system\CodeIgniter.php(895): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#12 D:\File\Xampp\htdocs\testing\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#13 D:\File\Xampp\htdocs\testing\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 D:\File\Xampp\htdocs\testing\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#15 D:\File\Xampp\htdocs\testing\spark(98): CodeIgniter\CLI\Console->run()
+#16 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\File\Xampp\htdocs\testing\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\File\Xampp\htdocs\testing\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\File\Xampp\htdocs\testing\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\File\Xampp\htdocs\testing\system\Database\BaseConnection.php(1387): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 D:\File\Xampp\htdocs\testing\system\Database\BaseConnection.php(1421): CodeIgniter\Database\BaseConnection->listTables()
+#4 D:\File\Xampp\htdocs\testing\system\Database\MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 D:\File\Xampp\htdocs\testing\system\Database\MigrationRunner.php(167): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 D:\File\Xampp\htdocs\testing\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 D:\File\Xampp\htdocs\testing\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 D:\File\Xampp\htdocs\testing\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 D:\File\Xampp\htdocs\testing\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#10 D:\File\Xampp\htdocs\testing\system\CodeIgniter.php(895): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#11 D:\File\Xampp\htdocs\testing\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#12 D:\File\Xampp\htdocs\testing\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\File\Xampp\htdocs\testing\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#14 D:\File\Xampp\htdocs\testing\spark(98): CodeIgniter\CLI\Console->run()
+#15 {main}
+ERROR - 2022-10-30 19:39:01 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'testing' in D:\File\Xampp\htdocs\testing\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\File\Xampp\htdocs\testing\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'testing', 3306, '', 0)
+#1 D:\File\Xampp\htdocs\testing\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\File\Xampp\htdocs\testing\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\File\Xampp\htdocs\testing\system\Database\BaseConnection.php(1387): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 D:\File\Xampp\htdocs\testing\system\Database\BaseConnection.php(1421): CodeIgniter\Database\BaseConnection->listTables()
+#5 D:\File\Xampp\htdocs\testing\system\Database\MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 D:\File\Xampp\htdocs\testing\system\Database\MigrationRunner.php(167): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 D:\File\Xampp\htdocs\testing\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 D:\File\Xampp\htdocs\testing\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 D:\File\Xampp\htdocs\testing\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 D:\File\Xampp\htdocs\testing\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#11 D:\File\Xampp\htdocs\testing\system\CodeIgniter.php(895): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#12 D:\File\Xampp\htdocs\testing\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#13 D:\File\Xampp\htdocs\testing\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 D:\File\Xampp\htdocs\testing\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#15 D:\File\Xampp\htdocs\testing\spark(98): CodeIgniter\CLI\Console->run()
+#16 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'testing' in D:\File\Xampp\htdocs\testing\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\File\Xampp\htdocs\testing\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\File\Xampp\htdocs\testing\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\File\Xampp\htdocs\testing\system\Database\BaseConnection.php(1387): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 D:\File\Xampp\htdocs\testing\system\Database\BaseConnection.php(1421): CodeIgniter\Database\BaseConnection->listTables()
+#4 D:\File\Xampp\htdocs\testing\system\Database\MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 D:\File\Xampp\htdocs\testing\system\Database\MigrationRunner.php(167): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 D:\File\Xampp\htdocs\testing\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 D:\File\Xampp\htdocs\testing\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 D:\File\Xampp\htdocs\testing\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 D:\File\Xampp\htdocs\testing\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#10 D:\File\Xampp\htdocs\testing\system\CodeIgniter.php(895): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#11 D:\File\Xampp\htdocs\testing\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#12 D:\File\Xampp\htdocs\testing\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\File\Xampp\htdocs\testing\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#14 D:\File\Xampp\htdocs\testing\spark(98): CodeIgniter\CLI\Console->run()
+#15 {main}
+ERROR - 2022-10-30 20:50:14 --> Email: sendWithMail throwed ErrorException: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\File\Xampp\htdocs\testing\system\Email\Email.php:1725
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mail(): Failed ...', 'D:\\File\\Xampp\\h...', 1725, Array)
+#1 D:\File\Xampp\htdocs\testing\system\Email\Email.php(1725): mail('webcoding11@gma...', '=?UTF-8?Q?Activ...', 'This is a multi...', 'Date: Sun, 30 O...')
+#2 D:\File\Xampp\htdocs\testing\system\Email\Email.php(1662): CodeIgniter\Email\Email->sendWithMail()
+#3 D:\File\Xampp\htdocs\testing\system\Email\Email.php(1560): CodeIgniter\Email\Email->spoolEmail()
+#4 D:\File\Xampp\htdocs\testing\vendor\myth\auth\src\Authentication\Activators\EmailActivator.php(32): CodeIgniter\Email\Email->send()
+#5 D:\File\Xampp\htdocs\testing\vendor\myth\auth\src\Controllers\AuthController.php(185): Myth\Auth\Authentication\Activators\EmailActivator->send(Object(Myth\Auth\Entities\User))
+#6 D:\File\Xampp\htdocs\testing\system\CodeIgniter.php(902): Myth\Auth\Controllers\AuthController->attemptRegister()
+#7 D:\File\Xampp\htdocs\testing\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#8 D:\File\Xampp\htdocs\testing\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\File\Xampp\htdocs\testing\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\File\Xampp\htdocs\testing\system\Commands\Server\rewrite.php(46): require_once('D:\\File\\Xampp\\h...')
+#11 {main}
+ERROR - 2022-10-30 20:50:14 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2022-10-30 20:50:14 --> 
+ERROR - 2022-10-30 20:54:47 --> Email: sendWithMail throwed ErrorException: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\File\Xampp\htdocs\testing\system\Email\Email.php:1725
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mail(): Failed ...', 'D:\\File\\Xampp\\h...', 1725, Array)
+#1 D:\File\Xampp\htdocs\testing\system\Email\Email.php(1725): mail('webcoding11@gma...', '=?UTF-8?Q?Activ...', 'This is a multi...', 'Date: Sun, 30 O...')
+#2 D:\File\Xampp\htdocs\testing\system\Email\Email.php(1662): CodeIgniter\Email\Email->sendWithMail()
+#3 D:\File\Xampp\htdocs\testing\system\Email\Email.php(1560): CodeIgniter\Email\Email->spoolEmail()
+#4 D:\File\Xampp\htdocs\testing\vendor\myth\auth\src\Authentication\Activators\EmailActivator.php(32): CodeIgniter\Email\Email->send()
+#5 D:\File\Xampp\htdocs\testing\vendor\myth\auth\src\Controllers\AuthController.php(400): Myth\Auth\Authentication\Activators\EmailActivator->send(Object(Myth\Auth\Entities\User))
+#6 D:\File\Xampp\htdocs\testing\system\CodeIgniter.php(902): Myth\Auth\Controllers\AuthController->resendActivateAccount()
+#7 D:\File\Xampp\htdocs\testing\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#8 D:\File\Xampp\htdocs\testing\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\File\Xampp\htdocs\testing\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\File\Xampp\htdocs\testing\system\Commands\Server\rewrite.php(46): require_once('D:\\File\\Xampp\\h...')
+#11 {main}
+ERROR - 2022-10-30 20:54:47 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2022-10-30 20:54:47 --> 
+CRITICAL - 2022-10-30 22:49:15 --> You do not have sufficient permissions to access that page.
+in VENDORPATH\myth\auth\src\Filters\RoleFilter.php on line 45.
+ 1 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('D:\\', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-30 22:50:54 --> You do not have sufficient permissions to access that page.
+in VENDORPATH\myth\auth\src\Filters\RoleFilter.php on line 45.
+ 1 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('D:\\', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-30 22:50:55 --> You do not have sufficient permissions to access that page.
+in VENDORPATH\myth\auth\src\Filters\RoleFilter.php on line 45.
+ 1 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('D:\\', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-30 22:50:56 --> You do not have sufficient permissions to access that page.
+in VENDORPATH\myth\auth\src\Filters\RoleFilter.php on line 45.
+ 1 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('D:\\', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-30 22:51:03 --> You do not have sufficient permissions to access that page.
+in VENDORPATH\myth\auth\src\Filters\RoleFilter.php on line 45.
+ 1 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('D:\\', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-30 22:53:59 --> You do not have sufficient permissions to access that page.
+in VENDORPATH\myth\auth\src\Filters\RoleFilter.php on line 45.
+ 1 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('D:\\', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-30 23:17:37 --> Invalid file: template/footer.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template/footer.php')
+ 2 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('template/footer', null, true)
+ 3 APPPATH\Views\templates\main.php(1677): CodeIgniter\View\View->include('template/footer')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\templates\\main.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('templates/main', [], true)
+ 7 APPPATH\Controllers\Home.php(10): view('templates/main', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->index()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-30 23:19:33 --> Undefined variable: titile
+in APPPATH\Views\templates\main.php on line 163.
+ 1 APPPATH\Views\templates\main.php(163): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: titile', 'APPPATH\\Views\\templates\\main.php', 163, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\templates\\main.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('templates/main', [], true)
+ 5 APPPATH\Controllers\Home.php(10): view('templates/main', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
